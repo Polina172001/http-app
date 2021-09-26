@@ -1,3 +1,8 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable comma-dangle */
+/* eslint-disable array-bracket-spacing */
+/* eslint-disable indent */
+/* eslint-disable linebreak-style */
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -30,14 +35,13 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|gif)$/i,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 8192,
-            },
+        use: [{
+          loader: 'url-loader',
+          options: {
+            limit: 8192,
           },
-        ],
+          // eslint-disable-next-line array-bracket-spacing
+        }, ],
       },
     ],
   },
